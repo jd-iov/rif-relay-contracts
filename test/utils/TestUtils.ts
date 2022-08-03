@@ -68,11 +68,11 @@ export async function getTestingEnvironment(): Promise<Environment> {
 }
 
 export function getLocalEip712Signature(
-  typedRequestData: EIP712TypedData,
-  privateKey: Buffer
+    typedRequestData: EIP712TypedData,
+    privateKey: Buffer
 ): PrefixedHexString {
-  // @ts-ignore
-  return sigUtil.signTypedData_v4(privateKey, { data: typedRequestData });
+    // @ts-ignore
+    return sigUtil.signTypedData_v4(privateKey, { data: typedRequestData });
 }
 
 /**
